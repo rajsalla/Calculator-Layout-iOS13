@@ -22,6 +22,6 @@ jobs:
       run: |
         xcodebuild clean test \
         -project Calculator-Layout-iOS13.xcodeproj \
-        -scheme Calculator Layout iOS13 \
-        -destination 'platform=iOS Simulator,name=iPhone 14' \
+        -scheme Calculator-Layout-iOS13 \
+        -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
         ONLY_ACTIVE_ARCH=YES
